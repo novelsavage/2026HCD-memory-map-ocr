@@ -58,7 +58,7 @@ const ERA_MAP_IMAGES: Record<string, string> = {
   "1960": "/maps/1960.jpg",
   "1970": "/maps/1970.jpg",
   "1980": "/maps/1980.jpg",
-  "2005": "/maps/2005.png",
+  "2005": "/maps/2005.jpg",
   "2025": "/maps/2025.jpg",
 };
 
