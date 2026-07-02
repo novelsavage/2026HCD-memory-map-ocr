@@ -1,0 +1,44 @@
+.venv/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.ruff_cache/
+
+.env
+.env.*
+.env.local
+!.env.example
+
+outputs/
+data/input/*
+data/ground_truth/*
+!data/input/.gitkeep
+!data/ground_truth/.gitkeep
+
+WebApp/node_modules/
+WebApp/.next/
+WebApp/certificates/
+WebApp/*.log
+WebApp/.env
+WebApp/.env.*
+!WebApp/.env.example
+
+.wrangler/
+
+# Cloudflare tunnel runtime logs
+cloudflared.log
+cloudflared.err
+
+# TS build cache
+*.tsbuildinfo
+
+# 座標素材（大容量・元データ。アプリは WebApp/public/maps を使用）
+座標指定用の画像/
+
+# OCR用テスト写真（手書き付箋＝個人情報の可能性・大容量。公開しない）
+OCR用の画像/
+
+思い出マップゼミ (2).md
+
+KotaroKinoshita/

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f3ea;
+  --foreground: #192024;
+  --panel: #fffaf0;
+  --panel-strong: #ffffff;
+  --line: #232323;
+  --muted: #687076;
+  --accent: #f2c94c;
+  --accent-strong: #e86f43;
+  --ok: #2f9e6d;
+  --warn: #d99a2b;
+  --danger: #ce3f3f;
+  --ink: #101820;
+  --font-display: var(--font-bitcount);
+  --font-ui: var(--font-dot-gothic), "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ui);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(25, 32, 36, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(25, 32, 36, 0.05) 1px, transparent 1px),
+    var(--background);
+  background-size: 28px 28px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.display-font {
+  font-family: var(--font-display);
+}
+
+.review-panel .shortcut-focused {
+  display: none;
+}
+
+.review-panel:focus-within .shortcut-default {
+  display: none;
+}
+
+.review-panel:focus-within .shortcut-focused {
+  display: inline;
+}

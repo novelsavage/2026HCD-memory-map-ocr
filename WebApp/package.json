@@ -1,0 +1,28 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --hostname 0.0.0.0",
+    "dev:https": "next dev --turbopack --hostname 0.0.0.0 --experimental-https --experimental-https-key certificates/x1-local-key.pem --experimental-https-cert certificates/x1-local.pem",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "wrangler": "^4.100.0"
+  }
+}
